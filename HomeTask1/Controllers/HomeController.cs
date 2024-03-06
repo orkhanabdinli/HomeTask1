@@ -59,10 +59,49 @@ public class HomeController : Controller
                 UrlText = "Read more "
             }
         };
+        List<Testimonials> testimonials = new List<Testimonials>()
+        {
+            new Testimonials()
+            {
+                FullName = "Saul Goodman",
+                Position = "Ceo & Founder",
+                Picture = "testimonials-1.jpg",
+                Description = "\r\n                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.\r\n                                "
+            },
+            new Testimonials()
+            {
+                FullName = "Sara Wilsson",
+                Position = "Ceo & Founder",
+                Picture = "testimonials-2.jpg",
+                Description = "\r\n                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.\r\n                                "
+            },
+            new Testimonials()
+            {
+                FullName = "Jena Karlis",
+                Position = "Store Owner",
+                Picture = "testimonials-3.jpg",
+                Description = "\r\n                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.\r\n                                "
+            },
+            new Testimonials()
+            {
+                FullName = "Matt Brandon",
+                Position = "Freelancer",
+                Picture = "testimonials-4.jpg",
+                Description = "\r\n                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.\r\n                                "
+            },
+            new Testimonials()
+            {
+                FullName = "John Larson",
+                Position = "Entrepreneur",
+                Picture = "testimonials-5.jpg",
+                Description = "\r\n                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.\r\n                                "
+            }
+        };
 
         HomeViewModel viewModel = new HomeViewModel()
         {
-            Services = services
+            Services = services,
+            Testimonials = testimonials
         };
 
         return View(viewModel);
