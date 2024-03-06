@@ -8,7 +8,7 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        List<Service> services = new List<Service>();
+        List<Service> services = new List<Service>()
         {
             new Service()
             {
@@ -17,7 +17,7 @@ public class HomeController : Controller
                 IconName = "bi bi-arrow-right",
                 Url = "https://google.com",
                 UrlText = "Read more "
-            };
+            },
             new Service()
             {
                 Title = "Eosle Commodi",
@@ -25,7 +25,7 @@ public class HomeController : Controller
                 IconName = "bi bi-broadcast",
                 Url = "https://google.com",
                 UrlText = "Read more "
-            };
+            },
             new Service()
             {
                 Title = "Ledo Markt",
@@ -33,7 +33,7 @@ public class HomeController : Controller
                 IconName = "bi bi-easel",
                 Url = "https://google.com",
                 UrlText = "Read more "
-            };
+            },
             new Service()
             {
                 Title = "Asperiores Commodit",
@@ -41,7 +41,7 @@ public class HomeController : Controller
                 IconName = "bi bi-bounding-box-circles",
                 Url = "https://google.com",
                 UrlText = "Read more "
-            };
+            },
             new Service()
             {
                 Title = "Velit Doloremque",
@@ -49,7 +49,7 @@ public class HomeController : Controller
                 IconName = "bi bi-calendar4-week",
                 Url = "https://google.com",
                 UrlText = "Read more "
-            };
+            },
             new Service()
             {
                 Title = "Dolori Architecto",
@@ -57,7 +57,7 @@ public class HomeController : Controller
                 IconName = "bi bi-chat-square-text",
                 Url = "https://google.com",
                 UrlText = "Read more "
-            };
+            }
         };
 
         HomeViewModel viewModel = new HomeViewModel()
